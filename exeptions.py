@@ -16,11 +16,15 @@ def divide(num1, num2):
     except ZeroDivisionError:
         print('No se puede dividir por 0')
         return 'Operacion erronea'
-try:
-    op1 = (int(input("Introduce el primer numero: ")))
+while True:
+    try:
+        op1 = (int(input("Introduce el primer numero: ")))
 
-    op2 = (int(input("Introduce el segundo numero: ")))
-except ValueError:
+        op2 = (int(input("Introduce el segundo numero: ")))
+        
+        break    
+    except ValueError:
+    
     print("Ingreso un valor no numerico")
 
 operacion = input("Introduce la operacion a realizar (suma,resta,multiplica,divide): ")
@@ -41,5 +45,3 @@ else:
     print("Operacion no contemplada")
 
 print("Operacion ejecutada. Continuacion de ejecucion del programa ")
-
-zaraza

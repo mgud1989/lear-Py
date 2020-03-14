@@ -9,15 +9,15 @@ def call_cost_calculate(call):
 
     return cost
 
-class ConditionSuperClass(object):
+class CallCostCalculator(object):
     def m(self):
         raise NotImplementedError("Subclass Responsability")
-class ConditionLocal(ConditionSuperClass):
+class LocalCallCostCalculator(CallCostCalculator):
     def m(self):
         #codigo de calculate_local_cost_of
-class ConditionNational(ConditionSuperClass):
+class NationalCallCostCalculator(CallCostCalculator):
     def m(self):
         #codigo de calculate_national_cost_of
-class ConditionInternational(ConditionSuperClass):
+class InternationalCallCostCalculator(CallCostCalculator):
     def m(self):
         #codigo de calculate_international_cost_of

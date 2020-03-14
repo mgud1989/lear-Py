@@ -10,10 +10,14 @@ def call_cost_calculate(call):
     return cost
 
 class ConditionSuperClass(object):
-    pass
+    def m(self):
+        raise NotImplementedError("Subclass Responsability")
 class ConditionLocal(ConditionSuperClass):
-    pass
+    def m(self):
+        #codigo de calculate_local_cost_of
 class ConditionNational(ConditionSuperClass):
-    pass
+    def m(self):
+        #codigo de calculate_national_cost_of
 class ConditionInternational(ConditionSuperClass):
-    pass
+    def m(self):
+        #codigo de calculate_international_cost_of

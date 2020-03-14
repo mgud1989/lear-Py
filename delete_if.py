@@ -9,3 +9,11 @@ def call_cost_calculate(call):
 
     return cost
 
+class ConditionSuperClass(object):
+    pass
+class ConditionLocal(ConditionSuperClass):
+    pass
+class ConditionNational(ConditionSuperClass):
+    pass
+class ConditionInternational(ConditionSuperClass):
+    pass
